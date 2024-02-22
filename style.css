@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(rgb(48, 183, 241), white);
+}
+
+/* --upper section----------------------------------------------- */
+.container {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-out;
+}
+
+.container:hover {
+    transform: rotateY(180deg);
+}
+
+.container .card-front {
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.container .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+
+.container .card-front {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(227, 154, 19);
+    background-image: linear-gradient(rgb(224, 105, 36), rgba(255, 255, 255, 0.966), rgb(51, 159, 51));
+    
+}
+.container .card-front #upper {
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card-front #upper .bharat img{
+    height: 50px;
+    width: 32px;
+    margin: 10px 20px;
+}
+
+.container .card-front #upper .heading img {
+    height: 50px;
+    width: 241px;
+    margin: 8px 20px;
+}
+
+.container .card-front #upper .logo img {
+    height: 50px;
+    width: 70px;
+    margin: 10px 20px;
+}
+
+
+/* --middle section CSS -------------------------------------------------------------*/
+.container .card-front .middle {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* issue date CSS------------------------------------ */
+.container .card-front .middle .date {
+    height: 100px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+}
+
+.container .card-front .middle .date p { 
+    font-size: 9px;
+    rotate: 270deg;
+    width: 115px;
+    position: absolute;
+    padding: 14px;
+
+}
+    
+/* middle profile section ---------------------------------------*/
+.container .card-front .middle .profile {
+    height: 150px;
+    width: 100px;
+    margin: 10px 2px 15px;
+}
+
+.container .card-front .middle .profile img {
+    width: 92%;
+    height: 80%;
+    border: 2px solid black;
+    margin: 15px 0px;
+}
+
+/* middle details section ---------------------------------*/
+.container .card-front .middle .details {
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 45px;
+}
+
+/* middle side section ---------------------------------------*/
+
+.container .card-front .middle .hologram {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-content: space-between;
+}
+
+.container .card-front .middle .hologram .small {
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+.container .card-front .middle .hologram .small img{
+    height: 100%;
+    width: 100%;
+}
+
+.container .card-front .middle .hologram .small p{
+    font-size: 7px;
+}
+
+.container .card-front .middle .hologram .holo {
+    height: 60px;
+    width: 95px;
+    margin: 10px 0px 0px;
+}
+
+.container .card-front .middle .hologram .holo img {
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/*---number CSS--------------------------------------------------- */
+
+.number {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.container .card-front .number p {
+    letter-spacing: 6px;
+}
+
+/* hr line CSS ---------------------------------------------------------- */
+
+.container .card-front hr {
+    width: 100%;
+    height: 3px ;
+    background-color:orangered;
+}
+
+/* front bottom ------------------------------------------------------------ */
+.container .card-front .bottom {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card-front .bottom .pehchan span {
+    color: red;
+}
+
+.container .card-front .bottom .pehchan h2 {
+    word-spacing: 13px;
+}
+
+/* card back CSS starts here------------------------------------------------------------------- */
+.container .card-back {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(227, 154, 19);
+    background-image: linear-gradient(rgb(224, 105, 36), rgba(255, 255, 255, 0.966), rgb(51, 159, 51));
+}
+
+.container .card-back #header {
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card-back #header .bharat img{
+    height: 50px;
+    width: 32px;
+    margin: 10px 20px;
+}
+
+.container .card-back #header .heading img {
+    height: 50px;
+    width: 241px;
+    margin: 10px 20px;
+}
+
+.container .card-back #header .logo img {
+    height: 50px;
+    width: 70px;
+    margin: 10px 20px;
+}
+
+/* middle back section------------------------------------------------ */
+
+.container .card-back .middleback {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card-back .middleback .date {
+    height: 100px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+}
+
+.container .card-back .middleback .date p { 
+    font-size: 9px;
+    rotate: 270deg;
+    width: 115px;
+    position: absolute;
+    padding: 14px;
+}
+
+.container .card-back .middleback .details {
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 52px 0px 8px;
+}
+.container .card-back .middleback .details #pata {
+    font-size: 12px;
+}
+
+.container .card-back .middleback .details #address {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.container .card-back .middleback .qrcode img {
+    height: 150px;
+}
+
+/* number CSS--------------------------------------------------------------- */
+
+.number {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.container .card-back .number p {
+    letter-spacing: 6px;
+}
+ /* hr line back CSS --------------------------------------------------------------- */
+.container .card-back hr {
+    width: 100%;
+    height: 3px ;
+    background-color:orangered;
+}
+
+/* backbottom CSS ------------------------------------------------------- */
+
+.container .card-back .backbottom {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card-back .backbottom div img{
+    width: 100%;
+    height: 100%;
+}
+
+.container .card-back .backbottom .phone img{
+    height: 25px;
+    width: 80px;
+}
+
+.container .card-back .backbottom .mail img {
+    height: 25px;
+    width: 170px;
+    margin: 0px 25px;
+}
+.container .card-back .backbottom .globe img{
+    height: 25px;
+    width: 170px;
+}
